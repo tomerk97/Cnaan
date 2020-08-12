@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+		
+	}	
+	100% {
+		opacity: 1;
+	}
+}
+	/*animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;*/
+
+html{
+	font-family: "Bungee";
+	cursor: default;
+}
+body{
+	margin-top: -20px;
+/*	background-image: url(Background.jpg);*/
+	background-color: white;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;	
+
+}
+#navlist{
+	background-color: gray;
+	margin-left: -0.5em;
+	height: 44px;
+
+}
+
+li>h1, #home{
+	color:white;
+	/*-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black; */
+}
+
+#navlist>li>h1{
+	margin-top: 40px;
+	
+}
+#navlist>li, #navlist h1{
+display: inline;
+list-style-type: none;
+margin-right: 10px;
+cursor: default;
+font-family: Montserrat;
+
+
+}
+
+#home{
+	margin-top: 0.4em;
+	margin-right: 1em;
+	float:right;
+	font-size: 1.5em;
+	cursor: pointer;
+}
+#home:hover{
+	transform: scale(0.9);
+}
+
+.tab {
+  overflow: hidden;
+  border: 2px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  margin-top: 0.1em;
+  margin-left: 0em;
+
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  
+
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+#sites{
+	background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  margin-top: -0px;
+  border: 1px solid #ccc;
+  border-top: none;
+  width: 97%;
+  background-color: white;
+  border:solid 0.05em #ccc;
+  height: 26em;
+  overflow-y: scroll;
+  margin-left: 0em;
+  margin-top:0.1em;
+}
+#First{
+	display: block;
+}
+.contentblock{
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	grid-template-rows: 1fr 4fr;
+}
+
+.contentimg{
+	margin-top: 1.7em;
+	width: 13em;
+	transition:2s ;
+	grid-row-start: 1;
+	grid-row-end: 3;
+}
+.contentimg:hover{
+	transform: scaleX(1.1);
+	transition: 0.4s;
+	cursor: pointer;
+}
+.contenttext{
+	grid-row: 2 3;
+	font-size: 12px;
+	overflow: inherit;
+}
+.contenttopic{
+	grid-row: 1 2;
+	margin-bottom: -1em;
+}
+
+#Second{
+	overflow: hidden;
+}
+
+#submit{
+ background-image: url(arrow.png);
+ background-color: transparent;
+ height: 70px;
+ cursor: pointer;
+ margin-left: 20px;
+}
+#submit:hover{
+	transform: scale(1.2);
+}
+
+#description{
+	height: 20em;
+	width: 40em;
+	text-align: left;
+	resize: none;
+}
+#favlist{
+	margin-top: -2em;
+	list-style-type: square;
+}
+.add{
+	
+	background-image: url("btn1.png");
+	border:1px solid black;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 3em;
+	width: 18em;
+	background-color: transparent;
+	border:none;
+	cursor: pointer;
+}
+.add:hover{
+	background-image: url("btn2.png");
+}
+
+#Third>h1{
+	font-size: 1.8em;
+	margin-left: 1.2em;
+	color:black;
+	-webkit-text-stroke-width: 0px;
+
+}
+.favlistchild{
+	cursor: pointer;
+}
+
+#thirdcont{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+
+}
+#favtrans{
+	margin-top: -2em;
+	
+}
+#monsites{
+	
+}
+
+#fourthcont{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+}
+#apps{
+	grid-column-start: 2 ;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+#gettaxi{
+	grid-column: 1 2;
+	grid-row-start: 2;
+}
+#movit{
+	grid-column: 2 3;
+	grid-row-start: 2;
+}
+#textareagrid{
+	grid-template-rows: 1fr 1fr;
+}
+#textareades{
+grid-row-start: 1;
+}
+
+#transformtextarea{
+	resize: none;
+	width: 30em;
+	height: 10em;
+	grid-row-start: 2;
+	grid-column: 1 2;
+}
+.appdiv{
+	display: grid;
+	grid-template-areas: "logo logo"
+						"app app"
+}
+.applogo{
+	grid-area: logo;
+	width: 10em;
+}
+.apps{
+	grid-area:app;
+	width: 3em;
+}
+.translistchild{
+	max-width:500px;
+	max-height: 200px;
+    word-wrap:break-word;
+    overflow-y: scroll;
+    cursor : pointer;
+}
+#printbtn{
+	float: right;
+	margin-right: 5em;
+	background-image: url("print.png");
+	margin-top: 0.4em;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 3em;
+	width: 3em;
+	background-color: transparent;
+	border:none;
+	cursor: pointer;
+
+}
+#printbtn:hover{
+	transform: scale(0.8);
+	
+}

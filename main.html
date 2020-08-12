@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Explore Israel</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	
+</head>
+<body>
+
+
+<div id="navigator">
+	<ul id="navlist">
+		<li><h1>Cna'an - Explore and Plan you'r trip</h1></li>
+		<li><input id="printbtn" type="button" onclick="printDiv('Fourth')"/></li>
+		<li ><a href="index.html"><h3 id="home">Home<h3></a></li>
+	</ul>
+</div>
+
+
+	<div id="Start">
+		<div class="tab">
+		  <button  class="tablinks active" onclick="openCity(event, 'First')">Sites</button>
+		  <button class="tablinks" onclick="openCity(event, 'Second')">Add Site</button>
+		  <button class="tablinks" onclick="openCity(event, 'Third')">Transformation</button>
+		  <button class="tablinks" onclick="openCity(event, 'Fourth')">Monitor</button>
+		
+		</div>
+
+		<!--------------------- First Tab --------------------------->
+		<div id="First" class="tabcontent">
+
+			<div class="contentblock" id="firstcontentblock">
+			  <img  class="contentimg" src="sea.jpg">
+			  <p class="contenttopic">VITAMIN "SEA"</p>
+			  <p class="contenttext">Tel Aviv Beaches: There are many beaches to choose from in Tel Aviv and no matter where you end up you will be satisfied. A few of our favs include Banana Beach, Gordon-Frishman Beach, Alma Beach, and Hilton Beach. Whatever you are in the mood for, they all have one thing in common – sunshine and a stunning view!</p>
+			  <div>
+			  	<button class="add"></button>
+			 
+			  </div>
+			</div>
+
+			<div class="contentblock">
+			  <img  class="contentimg" src="Jerus.jpg">
+			  <p class="contenttopic">Jerusalem</p>
+			  <p class="contenttext">Old City in Jerusalem: Exploring the endless winding streets in the quarters of the Old City belongs on any Israel bucket list. From the Western Wall to the Via Dolorosa, there are 1000s of years of history filled through these magnificent sites.</p>
+			  <div>
+			  	<button class="add"></button>
+			  </div>
+			</div>
+
+			<div class="contentblock">
+			  <img  class="contentimg" src="Yad.jpg">
+			  <p class="contenttopic">Mueseums</p>
+			  <p class="contenttext">Israel houses some of the most impressive museums, from modern and contemporary art to important historical events. Whatever your interests, there are many museums to visit. It is also a great alternative when the weather gets hot or rainy.</p>
+			  <div>
+			  	<button class="add"></button>
+			  </div>
+			</div>
+		</div>
+
+
+
+						<!--------------------- Second Tab --------------------------->
+
+
+		<div id="Second" class="tabcontent">
+		  <div id="addNewRow">
+		  		<label for="topic">Topic</label><br>
+				<input type="text" name="topic" id="topic"><br>
+				<label for="description">Description</label><br>
+				<textarea type="text" name="description" id="description" rows="4" cols="50"></textarea>	
+				<img src="arrow.png" id="submit">
+			</div>
+		</div>
+						<!--------------------- Third Tab ---------------------------->
+
+		<div id="Third" class="tabcontent">
+			<div id="fourthcont">
+				<div id="textareagrid">
+					<p id="textareades">You can take notes and add them to the monitor :)</p>
+					<textarea type="text" name="transformtextarea" id="transformtextarea" rows="4" cols="50"></textarea>
+					<button id="savedescription">Send</button>
+				</div>
+
+
+				<div id="apps">
+					<p>Israel offer great public transformation, We recommend to download one of these apps.</p>
+					<div id="gettaxi" class="appdiv">
+						<img class="applogo" src="gettaxi.png">
+						<a href="https://play.google.com/store/apps/details?id=com.gettaxi.android"><img class="apps" src="googleplay.png"></a>
+						<a href="https://apps.apple.com/il/app/%D7%94%D7%96%D7%9E%D7%A0%D7%AA-%D7%9E%D7%95%D7%A0%D7%99%D7%AA-gett-get-taxi/id412802326"><img class="apps" src="appstore.png"></a></div>
+
+					<div id="movit" class="appdiv">
+						<img class="applogo" src="moovit.png">
+						<a href="https://play.google.com/store/apps/details?id=com.tranzmate&gl=IL"><img class="apps" src="googleplay.png"></a>
+						<a href="https://apps.apple.com/il/app/moovit-public-transport-live/id498477945"><img class="apps" src="appstore.png"></a></div>
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<div id="Fourth" class="tabcontent">
+			<div id="thirdcont">
+				<div id="monsites">
+					<h1>Sites</h1>	
+				  	<ul id="favlist"></ul>
+				</div>
+
+				<div id="montrans">
+				  	<h1>Transformaion</h1>
+
+				  	<ul id="favtrans"> </ul>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+</body>
+<script type="text/javascript" src="main.js"></script>
+</html>
