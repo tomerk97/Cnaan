@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+		
+	}	
+	65%{
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+/*animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;*/
+
+@keyframes pulse {
+  0% {
+    margin-left: -10em;
+    opacity: 0;
+  }
+  100% {
+   margin-left: 3em;
+   opacity: 1;
+  }
+}
+@keyframes jump {
+  0% {
+   margin-top: 0em;
+  }
+     50% {
+    margin-top: 1em;
+ }
+ 
+
+  100% {
+ margin-top: 0em;
+  }
+}
+	
+
+html{
+	font-family: "Bungee";
+	cursor: default;
+}
+body{
+	margin-top: -20px;
+/*	background-image: url(Background.jpg);*/
+	background-color: white;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;	
+
+}
+#navlist{
+	background-color: gray;
+	margin-left: -0.5em;
+	height: 44px;
+
+}
+
+li>h1, #contact{
+	color:white;
+
+	/*-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black; */
+}
+
+
+#navlist>li, #navlist h1{
+display: inline;
+list-style-type: none;
+margin-right: 10px;
+cursor: pointer;
+font-family: Montserrat;
+
+
+}
+
+#contact{
+	font-size: 10px;
+
+}
+#printbtn{
+	float: right;
+	margin-right: 5em;
+	background-image: url("print.png");
+	margin-top: 0.4em;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 3em;
+	width: 3em;
+	background-color: transparent;
+	border:none;
+	cursor: pointer;
+
+}
+#printbtn:hover{
+	transform: scale(0.8);
+	
+}
+
+#cnaan{
+	animation:pulse 2s ease-in-out;
+	margin-left:3em;
+}
+#descrip{
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 3s;
+	/*animation:pulse 1s ease-in-out;
+	animation-delay: 2s;*/
+	margin-left:3em;
+}
+#btncont{
+	margin-left: 10%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 50%;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 4s;
+}
+#arrow{
+	height:4em;
+	margin-left: 0em;
+	animation: jump 1s infinite;
+	cursor: pointer;
+}
+#letsgo{
+	margin-top: 1.4em;
+}
+
+#site{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 4fr 1fr;
+}
